@@ -13,3 +13,4 @@ then forwards the logs to:
 # Resources
 
 * [Logstash Slack Output Plugin](https://github.com/cyli/logstash-output-slack)
+* [Logstash Docker Image](https://hub.docker.com/_/logstash/)
