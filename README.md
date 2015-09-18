@@ -1,5 +1,5 @@
 # logstash-demo
-Demo Logstash application which aggregates build logs 
+Demo Logstash application which aggregates build logs
 
 # Goal
 
@@ -12,16 +12,7 @@ then forwards the logs to:
 
 # How to use
 
-Create a `logstash.conf` file and run `logstash.sh`
-
-```
-input { stdin {} }
-output {
- slack { 
-   url => "SLACK_WEB_HOOK_URL"
-   username => "USERNAME"
- }}
-```
+Run `SLACK_HOOK_URL=<your slack webhook url> ./logstash.sh`
 
 # Resources
 

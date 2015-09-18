@@ -1,0 +1,6 @@
+input { stdin {} }
+output { slack { 
+url => SLACK_HOOK_URL
+}
+}
+
