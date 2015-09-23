@@ -6,6 +6,7 @@ docker build -t containersol/logstash .
 docker run \
   --name logstash \
   -v "$PWD":/config-dir \
+  -v "/var/lib/docker":/var/lib/docker \
   -v "$PWD/logs":/logs \
   -d \
   -e SLACK_HOOK_URL=$SLACK_HOOK_URL \
@@ -13,7 +14,5 @@ docker run \
 
 # A test container that logs to a log file
 docker run \
-  -v "$PWD":/mnt \
   --rm \
-  debian:jessie \
-  /mnt/test.sh
+  ubuntu
